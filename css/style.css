@@ -208,6 +208,10 @@ form {
     }
 }
 
+form fieldset {
+    border: none;
+}
+
 form legend {
     margin: 3rem auto;
     font-size: 2rem;

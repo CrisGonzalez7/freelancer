@@ -9,10 +9,13 @@
 }
 
 html {
+    /* Box model */
     box-sizing: border-box;
     min-height: 100%;
-    font-size: 62.5%;
     /* 1rem = 10px */
+    font-size: 62.5%;
+    /* Efecto de scroll */
+    scroll-snap-type: y mandatory;
 }
 
 *,
@@ -160,6 +163,13 @@ p {
     -webkit-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 21px -10px rgba(0, 0, 0, 0.75);
+}
+
+.site-header,
+.servicios,
+.contacto {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .contenedor-servicios {

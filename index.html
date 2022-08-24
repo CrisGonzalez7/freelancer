@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/2456038547.js" crossorigin="anonymous"></script>
     <!--Estilos-->
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -65,29 +66,31 @@
         <section id="contacto" class="contacto">
             <h2>Contacto</h2>
             <form action="#">
-                <legend>Contáctanos llenando todos los campos</legend>
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre:</label>
-                        <input type="text" name="nombre" placeholder="Nombre">
+                <fieldset>
+                    <legend>Contáctanos llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre:</label>
+                            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input type="tel" name="nombre" placeholder="Escribe tu teléfono">
+                        </div>
+                        <div class="campo w-100">
+                            <label>Correo</label>
+                            <input type="email" name="nombre" placeholder="Escribe tu correo">
+                        </div>
+                        <div class="campo w-100">
+                            <label>Mensaje:</label>
+                            <textarea></textarea>
+                        </div>
                     </div>
-                    <div class="campo">
-                        <label>Teléfono</label>
-                        <input type="tel" name="nombre" placeholder="Teléfono">
+                    <!--Fin contenedor-campos-->
+                    <div class="enviar">
+                        <button type="submit" class="boton">Enviar</button>
                     </div>
-                    <div class="campo w-100">
-                        <label>Correo</label>
-                        <input type="mail" name="nombre" placeholder="Correo">
-                    </div>
-                    <div class="campo w-100">
-                        <label>Mensaje:</label>
-                        <textarea></textarea>
-                    </div>
-                </div>
-                <!--Fin contenedor-campos-->
-                <div class="enviar">
-                    <input type="submit" class="boton" value="Enviar">
-                </div>
+                </fieldset>
             </form>
         </section>
     </div>

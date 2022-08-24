@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Copyright 2022 Servicio Digital -->
 <html lang="es">
 
 <head>
@@ -6,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Freelancer</title>
-    <!--Fuentes e íconos-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Fuentes e íconos -->
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2456038547.js" crossorigin="anonymous"></script>
-    <!--Estilos-->
+    <!-- Estilos -->
     <link rel="preload" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
     <link rel="preload" href="css/style.css" as="style">
@@ -71,23 +74,23 @@
                     <legend>Contáctanos llenando todos los campos</legend>
                     <div class="contenedor-campos">
                         <div class="campo">
-                            <label>Nombre:</label>
-                            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
                         </div>
                         <div class="campo">
-                            <label>Teléfono</label>
-                            <input type="tel" name="nombre" placeholder="Escribe tu teléfono">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" name="nombre" id="telefono" placeholder="Escribe tu teléfono">
                         </div>
                         <div class="campo w-100">
-                            <label>Correo</label>
-                            <input type="email" name="nombre" placeholder="Escribe tu correo">
+                            <label for="correo">Correo</label>
+                            <input type="email" name="nombre" id="correo" placeholder="Escribe tu correo">
                         </div>
                         <div class="campo w-100">
-                            <label>Mensaje:</label>
-                            <textarea></textarea>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje"></textarea>
                         </div>
                     </div>
-                    <!--Fin contenedor-campos-->
+                    <!-- Fin contenedor-campos -->
                     <div class="enviar">
                         <button type="submit" class="boton">Enviar</button>
                     </div>
